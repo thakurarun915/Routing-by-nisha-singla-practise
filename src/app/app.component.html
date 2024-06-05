@@ -1,0 +1,37 @@
+<div>
+    <h1 class="text-center">ParentComponent-Root Component</h1>
+
+ <table class="table table-bordered">
+
+    <tr classs="bg -primary">
+
+        <th>Id</th>
+        <th>Name</th>
+        <th>City</th>
+        <th>Salary</th>
+        <th>Dob</th>
+        <!-- th>Name</th>
+        th>City< /th>
+        th>Salary< /th>
+        th>Dob< /th> -->
+
+    </tr>
+
+    <tr  *ngFor="let user of users">
+        <td>{{user.Id}}</td>
+        <td>{{user.name }}</td>
+        <!-- <td>{{user.name |uppercase }}</td> here we use pipes -->
+        <td>{{user.city |uppercase}}</td>
+        <!-- <td>{{user.city | lowercase }}</td> here we use pipes -->
+        <td>{{user.salary}}</td>
+        <td>{{user.dob| date}}</td>
+        <!-- <td>{{user.dob |}}</td>  here we use pipes date format-->
+
+
+
+    </tr>
+
+
+
+
+ </table>
